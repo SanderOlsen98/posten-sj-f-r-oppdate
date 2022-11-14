@@ -1,9 +1,15 @@
 import React from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import {
+  MagnifyingGlassIcon,
+  BellIcon,
+  InboxIcon,
+  UserCircleIcon,
+} from "@heroicons/react/24/outline";
+import Logo from "../../img/postenLogo.png";
 
 function Header() {
   return (
-    <div className=" bg-[#F0F5F5] w-full py-6 items-center justify-between flex px-12">
+    <div className=" bg-[#f3f3f3] w-full py-6 items-center justify-between flex px-12">
       {/* Search */}
       <div className=" w-full lg:flex hidden space-x-3 items-center justify-start py-2">
         {/* icon */}
@@ -15,8 +21,15 @@ function Header() {
         />
       </div>
       {/* logo */}
-      <div className=" items-center w-full justify-center flex space-x-4"></div>
+      <div className=" items-center w-full justify-center flex space-x-4">
+        <img src={Logo} className="w-fit h-12" />
+      </div>
       {/* icons */}
+      <div className=" items-center justify-end space-x-6 flex w-full">
+        <BellIcon className="header-icon" />
+        <InboxIcon className="header-icon" />
+        <UserCircleIcon className="header-icon" />
+      </div>
     </div>
   );
 }
