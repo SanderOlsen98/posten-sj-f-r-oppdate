@@ -1,9 +1,17 @@
 import React from "react";
 import Popup from "../popup/Popup";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function LeftCars() {
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [colour, setColor] = useState("");
+  const [changeColor, setChangeColor] = useState("null");
+  const click = (colour) => {
+    setColor(colour);
+    document.getElementById(changeColor).style.backgroundColor = [colour];
+    setButtonPopup(false);
+    console.log(colour);
+  };
 
   return (
     <div className=" col-span-2 min-h-[90vh] border-r border-gray-200 items-start justify-start flex w-full">
@@ -14,10 +22,14 @@ function LeftCars() {
             Coordinator - Madeleine
           </button>
         </div>
-        <div className=" grid grid-rows-6 grid-flow-col gap-2 border-t py-3 border-b sm:grid-col flex">
+        <div className=" grid grid-rows-6 grid-flow-col gap-2 border-t py-3 border-b sm:grid-col">
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Burhan"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Burhan");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Burhan
@@ -25,7 +37,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Haugen"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Haugen");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Haugen
@@ -33,7 +49,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Zoran"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Zoran");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Zoran
@@ -41,7 +61,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Kitto"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Kitto");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Kitto
@@ -49,15 +73,23 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Shaho"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Shaho");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
-              Saho
+              Shaho
             </button>
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Anne-Bente"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Anne-Bente");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Anne-Bente
@@ -65,7 +97,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Hugo"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Hugo");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Hugo
@@ -73,7 +109,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Steinar"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Steinar");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Steinar
@@ -81,7 +121,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Hussain"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Hussain");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Hussain
@@ -89,7 +133,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Waseem"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Waseem");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Waseem
@@ -97,7 +145,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Saeed"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Saeed");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Saeed
@@ -105,7 +157,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Kurt"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Kurt");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Kurt
@@ -113,15 +169,23 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Tor"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Tor");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
-              Kurt
+              Tor
             </button>
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Sebastian"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Sebastian");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Sebastian
@@ -129,7 +193,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Sander"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Sander");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Sander
@@ -137,7 +205,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Steffen"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Steffen");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Steffen
@@ -145,7 +217,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Emil"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Emil");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Emil
@@ -153,7 +229,11 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              onClick={() => setButtonPopup(true)}
+              id="Simon"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Simon");
+              }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
               Simon
@@ -164,27 +244,47 @@ function LeftCars() {
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
         <h3>Select Option</h3>
         <div className="py-4">
+          {/* Change colour to green */}
           <button
-            onClick="buttonGreen"
+            onClick={() => {
+              click("#22c55e");
+            }}
             className="p-2 bg-green-500 rounded relative justify-center items-center px-8 py-2"
           >
             Im good
           </button>
         </div>
         <div className="py-4">
+          {/* Change colour to orange */}
           <button
-            onClick="buttonOrange"
+            onClick={() => {
+              click("#f97316");
+            }}
             className="p-2 bg-orange-500 rounded relative justify-center items-center px-8 py-2"
           >
             Not Sure
           </button>
         </div>
         <div className="py-4">
+          {/* Change colour to red */}
           <button
-            onClick="buttonRed"
+            onClick={() => {
+              click("#dc2626");
+            }}
             className="p-2 bg-red-600 rounded relative justify-center items-center px-8 py-2"
           >
             Need Help
+          </button>
+        </div>
+        <div className="py-4">
+          {/* Reset Colour */}
+          <button
+            onClick={() => {
+              click("#d1d5db");
+            }}
+            className="p-2 bg-gray-300 rounded relative justify-center items-center px-8 py-2"
+          >
+            Reset
           </button>
         </div>
       </Popup>

@@ -1,4 +1,4 @@
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoCheckmarkSharp } from "react-icons/io5";
 
 const List = ({ items, setItems, deleteItem }) => {
   return (
@@ -13,6 +13,12 @@ const List = ({ items, setItems, deleteItem }) => {
               >
                 {title}
               </li>
+              <button
+                className=" text-xl justify-end items-end"
+                onClick={() => deleteItem(id)}
+              >
+                <IoCheckmarkSharp className="text-green-600 " />
+              </button>
               <button className=" text-xl" onClick={() => deleteItem(id)}>
                 <IoClose className="text-red-400" />
               </button>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Popup(props) {
   return props.trigger ? (
-    <div className=" absolute top-1/3 left-0 bg-gray-200 w-full">
+    <div className=" absolute top-1/3 bg-gray-200 w-96 justify-center left-50% right-[40%]">
       <div className=" relative p-[32px]">
         <button
           onClick={() => props.setTrigger(false)}

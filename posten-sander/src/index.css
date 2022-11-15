@@ -31,3 +31,7 @@ code {
 .todo-list:last-child {
   border-bottom: none;
 }
+
+#greenStatus {
+  color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
