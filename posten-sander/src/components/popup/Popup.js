@@ -1,4 +1,5 @@
 import React from "react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 function Popup(props) {
   return props.trigger ? (
@@ -6,10 +7,11 @@ function Popup(props) {
       <div className=" relative p-[32px]">
         <button
           onClick={() => props.setTrigger(false)}
-          className=" absolute top-[16px] right-[16px] px-2 rounded bg-red-400"
+          className=" absolute top-[16px] right-[16px] px-2 rounded border"
         >
-          Close
+          <XMarkIcon className="w-6 h-7" />
         </button>
+
         {props.children}
       </div>
     </div>

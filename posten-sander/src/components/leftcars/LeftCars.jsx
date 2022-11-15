@@ -15,7 +15,7 @@ function LeftCars() {
 
   return (
     <div className=" col-span-2 min-h-[90vh] border-r border-gray-200 items-start justify-start flex w-full">
-      <div className="w-full items-start justify-start flex flex-col px-12 pt-12 pb-6">
+      <div className="w-full items-start justify-start flex flex-col px-4 pt-12 pb-6">
         <h1 className=" text-lg font-bold">Drivers</h1>
         <div className=" py-12">
           <button className="bg-red-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:bg-red-700 hover:text-white py-4">
@@ -37,14 +37,14 @@ function LeftCars() {
           </div>
           <div className=" py-2">
             <button
-              id="Haugen"
+              id="Kjell A H"
               onClick={() => {
                 setButtonPopup(true);
-                setChangeColor("Haugen");
+                setChangeColor("Kjell A H");
               }}
               className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
             >
-              Haugen
+              Kjell A H
             </button>
           </div>
           <div className=" py-2">
@@ -239,6 +239,54 @@ function LeftCars() {
               Simon
             </button>
           </div>
+          <div className=" py-2">
+            <button
+              id="Roy B"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Roy B");
+              }}
+              className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
+            >
+              Roy B
+            </button>
+          </div>
+          <div className=" py-2">
+            <button
+              id="Erik"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Erik");
+              }}
+              className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
+            >
+              Erik
+            </button>
+          </div>
+          <div className=" py-2">
+            <button
+              id="Kjell A S"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Kjell A S");
+              }}
+              className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
+            >
+              Kjell A S
+            </button>
+          </div>
+          <div className=" py-2">
+            <button
+              id="Tobias"
+              onClick={() => {
+                setButtonPopup(true);
+                setChangeColor("Tobias");
+              }}
+              className="bg-gray-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:opacity-30 py-4 w-32"
+            >
+              Tobias
+            </button>
+          </div>
         </div>
       </div>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
@@ -249,40 +297,40 @@ function LeftCars() {
             onClick={() => {
               click("#22c55e");
             }}
-            className="p-2 bg-green-500 rounded relative justify-center items-center px-8 py-2"
+            className="p-1 bg-green-500 rounded relative justify-center items-center px-24 py-4"
           >
             Im good
           </button>
         </div>
-        <div className="py-4">
+        <div className="py-3">
           {/* Change colour to orange */}
           <button
             onClick={() => {
               click("#f97316");
             }}
-            className="p-2 bg-orange-500 rounded relative justify-center items-center px-8 py-2"
+            className="p-1 bg-orange-500 rounded relative justify-center items-center px-20 py-4"
           >
             Not Sure
           </button>
         </div>
-        <div className="py-4">
+        <div className="py-3">
           {/* Change colour to red */}
           <button
             onClick={() => {
               click("#dc2626");
             }}
-            className="p-2 bg-red-600 rounded relative justify-center items-center px-8 py-2"
+            className="p-1 bg-red-600 rounded relative justify-center items-center px-20 py-4"
           >
             Need Help
           </button>
         </div>
-        <div className="py-4">
+        <div className="py-3">
           {/* Reset Colour */}
           <button
             onClick={() => {
               click("#d1d5db");
             }}
-            className="p-2 bg-gray-300 rounded relative justify-center items-center px-8 py-2"
+            className="p-1 bg-gray-300 rounded relative justify-center items-center px-8 py-2"
           >
             Reset
           </button>
