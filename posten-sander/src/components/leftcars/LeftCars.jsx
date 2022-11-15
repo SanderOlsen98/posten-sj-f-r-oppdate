@@ -16,10 +16,10 @@ function LeftCars() {
   return (
     <div className=" col-span-2 min-h-[90vh] border-r border-gray-200 items-start justify-start flex w-full">
       <div className="w-full items-start justify-start flex flex-col px-4 pt-12 pb-6">
-        <h1 className=" text-lg font-bold">Drivers</h1>
+        <h1 className=" text-lg font-bold">Sjåfører</h1>
         <div className=" py-12">
           <button className="bg-red-300 text-gray-900 font-bold px-4 rounded opacity-50 hover:bg-red-700 hover:text-white py-4">
-            Coordinator - Madeleine
+            Koordinator - Madeleine
           </button>
         </div>
         <div className=" grid grid-rows-6 grid-flow-col gap-2 border-t py-3 border-b sm:grid-col">
@@ -290,7 +290,7 @@ function LeftCars() {
         </div>
       </div>
       <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-        <h3>Select Option</h3>
+        <h3>Hvordan ser dagen din ut i dag?</h3>
         <div className="py-4">
           {/* Change colour to green */}
           <button
@@ -299,7 +299,7 @@ function LeftCars() {
             }}
             className="p-1 bg-green-500 rounded relative justify-center items-center px-24 py-4"
           >
-            Im good
+            Bra dag
           </button>
         </div>
         <div className="py-3">
@@ -310,7 +310,7 @@ function LeftCars() {
             }}
             className="p-1 bg-orange-500 rounded relative justify-center items-center px-20 py-4"
           >
-            Not Sure
+            Litt Usikker/ OK
           </button>
         </div>
         <div className="py-3">
@@ -321,7 +321,7 @@ function LeftCars() {
             }}
             className="p-1 bg-red-600 rounded relative justify-center items-center px-20 py-4"
           >
-            Need Help
+            Trenger Hjelp!
           </button>
         </div>
         <div className="py-3">

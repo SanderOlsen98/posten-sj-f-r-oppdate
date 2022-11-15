@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import React from "react";
 import List from "./List";
 import { v4 as uuidv4 } from "uuid";
+import Pickup from "./Pickup";
 
 const getLocalStorage = () => {
   let items = localStorage.getItem("items");
@@ -37,14 +38,14 @@ function MultiplyParcels() {
 
   return (
     <>
-      <div className=" w-full py-5">
-        <form onSubmit={handleSubmit}>
+      <div className=" w-full py-12">
+        <form onSubmit={handleSubmit} className=" relative">
           <input
             type="text"
             name="text"
-            placeholder="Enter Delivery..."
-            className="  bg-red-200 py-2 px-10 rounded-lg text-black tracking-wide"
-            autoComplete="off"
+            placeholder="Levering..."
+            className="  bg-red-200 rounded-lg text-black w-full py-3 px-3"
+            autoComplete="on"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
@@ -52,6 +53,9 @@ function MultiplyParcels() {
 
         <List items={items} setItems={setItems} deleteItem={deleteItem} />
       </div>
+      {/* <div className=" w-full py-12">
+        <Pickup items={items} setItems={setItems} deleteItem={deleteItem} />
+      </div> */}
     </>
   );
 }
