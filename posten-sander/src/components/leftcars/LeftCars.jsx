@@ -310,7 +310,7 @@ function LeftCars() {
             }}
             className="p-1 bg-orange-500 rounded relative justify-center items-center px-20 py-4"
           >
-            Litt Usikker/ OK
+            Litt Usikker
           </button>
         </div>
         <div className="py-3">
